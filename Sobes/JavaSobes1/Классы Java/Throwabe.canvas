@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"8ee904f0688e9667","type":"text","text":"Throwable","x":-140,"y":-160,"width":260,"height":60,"color":"5"},
+		{"id":"10885700b3f35507","type":"text","text":"Exeption. С которыми разработчик работает","x":-460,"y":-60,"width":260,"height":60,"color":"5"},
+		{"id":"8cc0dfafd1569535","type":"text","text":"Error. Серьёзные проблемы на уровне JVM","x":200,"y":-60,"width":260,"height":60,"color":"5"},
+		{"id":"27a141e515703a1d","type":"text","text":"Checked (проверяемые)","x":-650,"y":80,"width":300,"height":600},
+		{"id":"f2770cfbfac302ca","type":"text","text":"IOExeption","x":-630,"y":210,"width":260,"height":60,"color":"5"},
+		{"id":"ce27f0c302bce760","type":"text","text":"SQLExeption","x":-630,"y":290,"width":260,"height":60,"color":"5"},
+		{"id":"453b30006200ac23","type":"text","text":"IOExeption","x":-630,"y":370,"width":260,"height":60,"color":"5"},
+		{"id":"79f76f46b23dfef9","type":"text","text":"IOExeption","x":-630,"y":450,"width":260,"height":60,"color":"5"},
+		{"id":"76d0fc318ba6dde8","type":"text","text":"UnChecked (не проверяемые) RunTimeExeption. Компилятор не заставляет обрабатывать.","x":-300,"y":180,"width":300,"height":500},
+		{"id":"232834d5ec30c91e","type":"text","text":"RuntimeExeption","x":-280,"y":80,"width":260,"height":60,"color":"5"},
+		{"id":"92026dbe13b293be","type":"text","text":"NullPointerExeption","x":-280,"y":310,"width":260,"height":60,"color":"5"},
+		{"id":"98436a2e883b022d","type":"text","text":"IllegalArgumentExeption","x":-280,"y":390,"width":260,"height":60,"color":"5"},
+		{"id":"e8caa9bd54e8d785","type":"text","text":"ArrayIndexOutOfBoundsExeption","x":-280,"y":470,"width":260,"height":60,"color":"5"},
+		{"id":"02541cec835243f9","type":"text","text":"ClassCastExeption","x":-280,"y":550,"width":260,"height":60,"color":"5"},
+		{"id":"1cc1e434b044000e","type":"text","text":"IOError","x":360,"y":80,"width":260,"height":60,"color":"5"},
+		{"id":"71dc23cc0f08c3fd","type":"text","text":"VirtualMachineError","x":360,"y":160,"width":260,"height":60,"color":"5"},
+		{"id":"6df49d7a70cc0657","type":"text","text":"OutOfMemoryError","x":540,"y":300,"width":260,"height":60,"color":"5"},
+		{"id":"89331ed811dc9759","type":"text","text":"StackOverFlowError","x":200,"y":300,"width":260,"height":60,"color":"5"}
+	],
+	"edges":[
+		{"id":"e24a2d644bad09a7","fromNode":"10885700b3f35507","fromSide":"right","toNode":"8ee904f0688e9667","toSide":"bottom"},
+		{"id":"69f529e79f23078c","fromNode":"8cc0dfafd1569535","fromSide":"left","toNode":"8ee904f0688e9667","toSide":"bottom"},
+		{"id":"7c95e172228c69ca","fromNode":"27a141e515703a1d","fromSide":"top","toNode":"10885700b3f35507","toSide":"bottom"},
+		{"id":"53549d6764d2f05a","fromNode":"232834d5ec30c91e","fromSide":"top","toNode":"10885700b3f35507","toSide":"bottom"},
+		{"id":"285dfc61d7ab9645","fromNode":"76d0fc318ba6dde8","fromSide":"top","toNode":"232834d5ec30c91e","toSide":"bottom"},
+		{"id":"3e17be8daeea5eba","fromNode":"1cc1e434b044000e","fromSide":"left","toNode":"8cc0dfafd1569535","toSide":"bottom"},
+		{"id":"8911ca3f25f0f3ca","fromNode":"71dc23cc0f08c3fd","fromSide":"left","toNode":"8cc0dfafd1569535","toSide":"bottom"},
+		{"id":"340290d86756afd4","fromNode":"89331ed811dc9759","fromSide":"top","toNode":"71dc23cc0f08c3fd","toSide":"bottom"},
+		{"id":"5f6201f567115197","fromNode":"6df49d7a70cc0657","fromSide":"top","toNode":"71dc23cc0f08c3fd","toSide":"bottom"}
+	]
+}

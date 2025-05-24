@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"b222ce68e9b99c9d","type":"text","text":"**`InputStream`/`OutputStream`**\nБайтовые потоки(byte)","x":-260,"y":-220,"width":300,"height":100,"color":"6"},
+		{"id":"78878f7e5698c9a8","type":"text","text":"**`FileInputStream/FileOutputStream`**\nЧтение/Запись байтов из файла","x":-500,"y":-80,"width":300,"height":100,"color":"5"},
+		{"id":"a740c52675da25ec","type":"text","text":"**`BufferedInputStream/BufferedOutputStream`**\nБуферизация чтения/записи","x":-500,"y":40,"width":300,"height":100,"color":"5"},
+		{"id":"7afbd6f1e7d117a7","type":"text","text":"**`DataInputStream/DataOutputStream`**\nЧтение/запись примитивов","x":-500,"y":160,"width":300,"height":100,"color":"5"},
+		{"id":"56aac4b260092fe3","type":"text","text":"**`FileReader/FileWriter`**\nЧтение/запись символов из/в файла","x":300,"y":-80,"width":300,"height":100,"color":"5"},
+		{"id":"bd9a19e2b56ef980","type":"text","text":"**`BufferedReader/BufferedWriter`**\nБуферизация чтения/записи строк","x":300,"y":40,"width":320,"height":100,"color":"5"},
+		{"id":"65f556ac26221509","type":"text","text":"**`InputStreamReader/OutputStreamWriter`**\n\"Мосты\"","x":300,"y":160,"width":300,"height":100,"color":"5"},
+		{"id":"04a04f5c5144d9f1","type":"text","text":"**`Reader`/`Writer`**\nСимвольные потоки(char)","x":80,"y":-220,"width":300,"height":100,"color":"6"},
+		{"id":"3533f075631c4932","x":285,"y":-400,"width":315,"height":160,"type":"text","text":"Базовые абстрактные методы лежат в абстрактных классах:\n`read()` `write()` `close()` \nв реализации должны быть переопределенны"},
+		{"id":"5ccc03cbae6f9799","x":460,"y":300,"width":380,"height":140,"type":"text","text":"**Мосты**. Используются когда на входе **байтовый поток**, а нужно считать **строки**.\nИли наоборот, есть **текст** и нужно записать его в **байтовый поток.**"}
+	],
+	"edges":[
+		{"id":"07559a2c2aa00e56","fromNode":"b222ce68e9b99c9d","fromSide":"bottom","toNode":"78878f7e5698c9a8","toSide":"right"},
+		{"id":"f9408004d83b6f66","fromNode":"b222ce68e9b99c9d","fromSide":"bottom","toNode":"a740c52675da25ec","toSide":"right"},
+		{"id":"fbe2908ff92d43bd","fromNode":"b222ce68e9b99c9d","fromSide":"bottom","toNode":"7afbd6f1e7d117a7","toSide":"right"},
+		{"id":"dfbd70d58aa412fd","fromNode":"04a04f5c5144d9f1","fromSide":"bottom","toNode":"56aac4b260092fe3","toSide":"left"},
+		{"id":"98cb4106a1ba213b","fromNode":"04a04f5c5144d9f1","fromSide":"bottom","toNode":"bd9a19e2b56ef980","toSide":"left"},
+		{"id":"6daee4aecb74eb38","fromNode":"04a04f5c5144d9f1","fromSide":"bottom","toNode":"65f556ac26221509","toSide":"left"},
+		{"id":"81fdf3717d742ead","fromNode":"5ccc03cbae6f9799","fromSide":"top","toNode":"65f556ac26221509","toSide":"right","toEnd":"none"}
+	]
+}
