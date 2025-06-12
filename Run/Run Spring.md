@@ -37,10 +37,21 @@ java MyApp
 `BootRun` запускает класс(спринга-boot) `JarLauncher`. `ClassLoader` загружает зависимости.
 Запускается главная функция `main()` из `@SpringBootApplication`.
 
+При *создании проекта* можно выбрать тип дистрибутива Gradle:
+- **`Wrapper`** - скрипт:
+	- подгружает нужную версию Gradle;
+	- гарантирует одинаковую сборку на всех машинах;
+	- позволяет запускать Gradle, даже если он не установлен.
+- **`Local installation`** - использует локальную версию Gradle, лежащую в `PATH`
+`GropId` - уникальное имя проекта/библиотеки. Используется в артефакте, который можно опубликовать в Maven Center.
+`ArtifactId` - имя модуля/проекта, то есть jar-ник. 
+Итоговая формула: `GroupId:ArtifactId:Version`.
+
 
 Команды:
 `Ctr+Shift+O` - пере-сборка Gradle.
 `./gradlew --refresh-dependencies` - синхронизация зависимостей (пере-сборка Gradle).
+`./gradlew clean build --refresh-dependencies` - перебилд всех зависимостей.
 
 `./gradlew bootJar` - создание `jar`-инка. 
 `./gradlew clean build` - очистка + пересборка.
