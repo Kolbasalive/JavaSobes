@@ -13,6 +13,8 @@
 ### DockerFile
 `docker build -t nameApp .` - создание образа на основе DockerFile.
 `docker rmi <image_id или image_name>` - удалить образ.
+`docker images` - просмотр всех образов докера.
+
 
 
 Выполняется построчно, на каждом этапе создаёт слой (layer), для кэширования этих шагов. Если слои не изменились, то `docker build` не будет пересобирать слои заново.
@@ -31,3 +33,4 @@ COPY build/libs/EventHub-0.0.1-SNAPSHOT.jar EventHub-0.0.1-SNAPSHOT.jar
   
 ENTRYPOINT ["java", "-jar", "EventHub-0.0.1-SNAPSHOT.jar"]
 ```
+
